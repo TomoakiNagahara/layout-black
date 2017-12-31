@@ -1,0 +1,15 @@
+/**
+ * app-skeleton-3:/app/layout/black/css/dump.css
+ *
+ * @creation  2017-07-29
+ * @version   1.0
+ * @package   app-skeleton
+ * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright Tomoaki Nagahara All right reserved.
+ */
+
+div.OP_DUMP table,
+div.OP_DUMP th,
+div.OP_DUMP td {
+	border: 1px solid white;
+}

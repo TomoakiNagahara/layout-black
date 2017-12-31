@@ -1,0 +1,46 @@
+<?php
+/**
+ * app-skeleton-3:/app/layout/black/html.phtml
+ *
+ * @creation  2016-11-22
+ * @version   1.0
+ * @package   app-skeleton
+ * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright Tomoaki Nagahara All right reserved.
+ */
+//	...
+$app_root = rtrim(ConvertURL('app:/'), '/');
+
+//	...
+$layout   = Env::Get(Layout::_NAME_);
+?>
+<!doctype html>
+<html>
+	<head>
+		<?php Template::Run('head.phtml') ?>
+	</head>
+	<body id="body" class="body">
+		<div id="head-area">
+			<?= Template::Get('header.phtml') ?>
+			<?= Template::Get('menu/top.phtml') ?>
+		</div>
+		<div id="body-area">
+			<div>
+				<!-- left menu -->
+				<?= Template::Get('menu/left.phtml') ?>
+			</div>
+			<div id="content-area" class="content-area">
+				<?= $content ?>
+			</div>
+			<div>
+				<!-- right menu -->
+				<?= Template::Get('menu/right.phtml') ?>
+			</div>
+		</div>
+		<div id="foot-area">
+			<?= Template::Get('menu/bottom.phtml') ?>
+			<?= Template::Get('footer.phtml') ?>
+		</div>
+		<?= Template::Get('google-analytics.phtml') ?>
+	</body>
+</html>

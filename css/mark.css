@@ -1,0 +1,18 @@
+/**
+ * app-skeleton-3:/app/layout/black/css/body.css
+ *
+ * @creation  2017-06-29
+ * @version   1.0
+ * @package   app-skeleton
+ * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright Tomoaki Nagahara All right reserved.
+ */
+
+div.OP_MARK span.boolean.true {
+	color: #30c0ff !important;
+}
+
+div.OP_MARK span.NULL,
+div.OP_MARK span.boolean.false {
+	color: #ffc0c0 !important;
+}
